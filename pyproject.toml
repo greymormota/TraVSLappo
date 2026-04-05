@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TraVSLappo"
+version = "0.1.0"
+description = "MAPPO based variable speed limits control on urban traffic network"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Project Maintainers" }
+]
+keywords = ["reinforcement-learning", "multi-agent", "mappo", "sumo", "traffic-signal-control"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "torch",
+  "gym",
+  "imageio",
+  "setproctitle",
+  "tensorboardX",
+  "wandb",
+  "sumolib",
+  "traci"
+]
+
+[project.urls]
+Homepage = "https://github.com/greymormota/TraVSLappo"
+Issues = "https://github.com/greymormota/TraVSLappo/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["algorithms*", "envs*", "runner*", "train*", "utils*"]
+exclude = ["legacy*", "docs*", "artifacts*", "sumo*", "scripts*"]

@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+recursive-include sumo *
+recursive-include scripts *
+recursive-include docs *
+recursive-include artifacts *
+recursive-include legacy *

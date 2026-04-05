@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and runtime outputs
+*.log
+results/
+results_eval/
+wandb/
+runs/
+outputs/
+checkpoints/
+models/
+
+# Jupyter
+.ipynb_checkpoints/
