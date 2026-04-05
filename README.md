@@ -70,7 +70,7 @@ Example:
 python train/train.py --algorithm_name mappo --experiment_name baseline --scenario_name MyEnv --num_agents 12
 ```
 
-## Training
+## Evaluating
 
 ### Supported controllers
 The evaluation script supports the following controllers:
