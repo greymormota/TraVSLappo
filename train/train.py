@@ -1,15 +1,24 @@
 
 # !/usr/bin/env python
 import sys
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
+from config import get_config
+
 import os
 import wandb
 import socket
 import setproctitle
 import numpy as np
-from pathlib import Path
 import torch
-from config import get_config
 from envs.env_wrappers import SubprocVecEnv, DummyVecEnv
+
+
+
+
 
 """Train script for MPEs."""
 

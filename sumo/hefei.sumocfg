@@ -1,16 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
-
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration>
     <input>
-        <net-file value="merage.net.xml"/>
-        <route-files value="saturated.rou.xml"/>
+        <net-file value="merage.net.xml" />
+        <route-files value="extreme.rou.xml" />
     </input>
-
     <time>
-      <begin value="0"/>
-      <end value="7200"/>
+        <begin value="0" />
+        <end value="7200" />
+        <step-length value="0.2" />
     </time>
-
-
+    <processing>
+        <ignore-route-errors value="false" />
+        <step-method.ballistic value="true" />
+        <emergencydecel.warning-threshold value="1.1" />
+    </processing>
+    <report>
+        <verbose value="true" />
+    </report>
 </configuration>

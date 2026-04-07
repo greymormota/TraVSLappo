@@ -1,6 +1,6 @@
 # TraVSLappo
 
-A GitHub repository project for **Multi-Agent Proximal Policy Optimization-based Variable Speed Limits control** in **SUMO traffic simulation**.
+A project for **Multi-Agent Proximal Policy Optimization-based Variable Speed Limits control** in **SUMO traffic simulation**.
 
 ## What is included
 
@@ -82,8 +82,8 @@ The evaluation script supports the following controllers:
 The following demand levels are supported:
 
 - `undersaturated` (free flow)
-- `saturated` (capicity flow)
-- `oversaturated` (Extreme, per)
+- `saturated` (capacity flow)
+- `oversaturated` (Extreme, perturbed flow)
 
 You can evaluate all demand settings together or specify only a subset. :contentReference[oaicite:3]{index=3}
 
